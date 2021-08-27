@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8" />
+    <title>Olá mundo</title>
+
+    <style>
+        body {
+            background-color: aqua;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        p {
+            background-color:white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 50px;
+            margin-left: 20px;
+            margin-bottom: 50px;
+        }
+
+        div {
+            background-color: chartreuse;
+            padding: 50px;
+            margin-right: 10px;
+        }
+
+        .paragrafosAzuis {
+            background-color: cornflowerblue;
+        }
+
+        .paragrafosLaranjas {
+            background-color: coral;
+        }
+
+        #logoUni7 {
+            width: 250px;
+        }
+    </style>
+
+    <script>
+        function clicouBotao() {
+            //elementoParagrafo = document.createElement("p");
+            //elementoParagrafo.innerHTML = "Texto do paragrafo";
+
+            divAzul = document.getElementsByClassName("divAzul");
+            for (i = 0; i < divAzul.length; i++) {
+                divAzul[i].style = "background-color:  blue; margin: 10px 500px 20px 0";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="divAzul">
+        <form action="umaURLQualquer">
+            <label>Cor</label>
+            <input name="nome" type="text" value="valor padrão"/>
+            <br/>
+            <label>Margem</label>
+            <input name="senha" type="text" value="valor padrão"/>
+        </form>
+        <button onclick="clicouBotao()">Clique aqui</button>
+    </div>
+
+<div class="divAzul"> 
+    <p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui", fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por 'lorem ipsum' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero)</p>
+</div>
+</body>
+
+</html>
